@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Christmas with You</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <section>
+        <img src="assets/images/bg.jpg" id="bg" alt="">
+        <img src="assets/images/moon.png" id="moon" alt="">
+        <img src="assets/images/cloud1.png" id="cloud1" alt="">
+        <img src="assets/images/cloud2.png" id="cloud2" alt="">
+        <img src="assets/images/santa.png" id="santa" alt="">
+        <div id="tree"></div>
+        <h2 id="text">Merry Christmas</h2>
+
+    </section>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to('#moon', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.5,
+        })
+
+        gsap.to('#bg', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.1,
+        })
+
+        gsap.to('#santa', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.5,
+            y: -500,
+            x: 2600
+        })
+
+        gsap.to('#tree', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -500
+        })
+
+        gsap.to('#cloud1', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -200
+        })
+
+        gsap.to('#cloud2', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: 300
+        })
+
+        gsap.to('#text', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            y: -800
+        })
+    </script>
+</body>
+
+</html>
