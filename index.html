@@ -8,6 +8,8 @@
     <title>Christmas with You</title>
 
     <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -18,9 +20,27 @@
         <img src="assets/images/cloud2.png" id="cloud2" alt="">
         <img src="assets/images/santa.png" id="santa" alt="">
         <div id="tree"></div>
-        <h2 id="text">Merry Christmas</h2>
-
+        <h2 id="text">
+            0 Merry Christmas 0
+            <p class="text-gift">
+                <a href="#" class="gift">You got a gift! Click Here&nbsp;
+                    <i class='bx bx-gift bx-tada'></i>
+                </a>
+            </p>
+        </h2>
     </section>
+    <div class="overlay" id="ticket-overlay">
+        <div class="ticket-content">
+            <img class="ticket" src="assets/images/ticket.png" alt="">
+            <img class="close-overlay" src="assets/icons/close.png" />
+        </div>
+        <div class="ticket-move">
+            <a href="#" class="play">
+                <img class="play-btn" src="assets/icons/play.png" alt=""/>
+                <span>Go To Your Gift</span>
+            </a>
+        </div>
+    </div>
 
     <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">
@@ -55,8 +75,10 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script src="scripts/scripts.js"></script>
     <script>
         gsap.to('#moon', {
             scrollTrigger: {
